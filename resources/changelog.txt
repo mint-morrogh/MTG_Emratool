@@ -1,0 +1,100 @@
+
+################## Version 0.34 #################### 
+7/8/24
+Wow! What a long break. been using this at version 0.33 for a while now.
+**BUG FIXED: EDHREC changed a bunch of class names, fixed EDHREC Fetcher, Random Commander, and Theme selector for EDHREC Fetcher to work with these new updates.
+
+
+################## Version 0.33 #################### 
+5/22/23
+**BUG FIXED: EDHREC Changed the CSS Selector for theme drop down, EDHREC Fetcher is working again allowing the user to re-analyze after selecting a dropdown theme option.
+
+
+################## Version 0.32 #################### 
+4/25/23
+Added the Random Commander window, which just fetches a random commander from the skryfall API and allows you to copy it to the clipboard
+**BUG FIXED: Enchantment cards had trouble fetching from EDHREC Fetcher tool, resolved.
+
+
+################## Version 0.31 #################### 
+4/23/23
+Added listboxes to EDHREC Fetch tool
+Added card image fetching using the method tested in version 0.30
+
+
+################## Version 0.30 #################### 
+4/22/23
+Added EDHREC Fetch tool, returns all cards based off of commander or commander + theme selected. Works with only copied lists from Forge at the moment
+It should be noted the EDHREC Fetch tool I developed for this uses a chrome driver hook to headlessly fetch the data, as EDHREC does not have an official API. I am not sure how this will work when this eventually gets converted to a executable file or dmg. Will cross that bridge when I get there
+
+Also I figured out a better solution for fetching card images that PySimpleGUI can utilize:
+a function fetches the image bytes as a bytes object and converts them into a bytes buffer, then the image is pulled from the bytes buffer and loaded into a PIL Image object. Then the image is saved as a PNG format in the bytes buffer again, which is returned as a bytes object.
+It stores all the bytes in a cache that can be recalled for 60 seconds to keep the user from hitting the API too hard. and then when the window is closed, the cache is cleared.
+Right now this solution is just in a test UI and confirmed working, but I will be adding this to everything it applies to soon
+
+in addition, all multiline input fields that just display cards will be converted in an upcoming update to listboxes for easier copy and pasting
+
+################## Version 0.27 #################### 
+4/17/23
+Added 'Fetch Land Images' Button to Land Calculator UI. tried getting hover states to work in PySimpleGUI but it appears to only
+work for text and not images. Until I figure out a better solution this is still better than nothing.
+
+
+################## Version 0.26 #################### 
+4/16/23
+Created an EDHREC API that pulls a bunch of data headlessly via selenium webdriver, organizes that data as json files based off the commander, which is inferred from the decklist format. Only works with decklists pasted directly from Forge at the moment
+Started testing EDHREC Fetch tool, logic is in place for all the webscraping but the UI is not implemented yet. should be done soon 
+Started testing Combo Finder tool, logic is in place for all the webscraping but the UI is not implemented yet. should be done soon
+
+
+################## Version 0.25 #################### 
+4/13/23
+**BUG FIXED: tribal detection in Land Calculator was calculating Shapeshifters and Changelings incorrectly
+**BUG FIXED: Legendaries were rounding its % with the total rest of spells instead of independently
+
+
+################## Version 0.24 #################### 
+4/12/23
+Rewrote the entire application to handle json files instead of just text files. should add great flexibility for everything going forward. Honestly should have done this from the start I don't know why I didn't
+**REMOVED Rounded percentages for Land Calculator to instead handle accurate percentages
+
+
+################## Version 0.23 #################### 
+4/10/23
+Organized files into a proper folder structure because everything just hanging out in the root was driving me nuts
+Added scrollbar logic to larger UI tools
+Added support for colorless mana calculations in Land Calculator.
+**REMOVED Extra files being generated that are no longer utilized, pretty much all of them were just stuff for debugging
+**BUG FIXED: background colors changed for text input and output fields to increase legibility, changed all output fields to be disabled for text entry if applicable
+
+################## Version 0.22 #################### 
+4/8/23
+
+Added Tribal detection for Land Calculator
+Added Tribal Land staples to Land Pool that can now be pulled and returned by the Land Calculator
+
+
+################## Version 0.21 #################### 
+4/8/23
+
+Added display for a Tribal list in Land Calculator
+**BUG FIXED: Tribal lookup now can handle the format of Adventure cards
+
+
+################## Version 0.2 #################### 
+4/7/23
+
+Added Land Calculator
+Displays number of colored mana for all cards in a decklist utilizing the Skryfall API
+Displays all card main-types (Creatures, Sorceries, Instants, Enchantments, etc)
+Converts all colored mana to a CNC value, and adds a breakdown of all card types as of April of 2023 (no support for battles yet since they are not officially out yet)
+First version of Land Recommendations, calculates using color diversity, color spread, number of colors, and some oddly specific cases. added a pool of best lands.
+Prefers snow-covered lands for competitive advantage, prioritizes dual lands, fetch lands, shock lands, slow duals, crowd lands, check lands, pain lands etc...
+Returns landbase to a descending order of useability based off above criteria. 
+
+##################  Version 0.1 ###################
+4/5/23
+
+Init version - Hello world!
+added a Deck Compare to toolkit to allow the user to quickly diff check two lists and return what has been changed 
+added support for decklists copied directly from Moxfield or Forge and converts them to a usable format for the application

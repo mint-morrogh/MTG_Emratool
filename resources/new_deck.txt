@@ -1,0 +1,112 @@
+Deck: 8_Reaper Changlings v3
+
+Commander: 
+1 Reaper King
+
+Main: 
+1 Amoeboid Changeling
+1 Arcane Sanctum
+1 Arcane Signet
+1 Aspect of Mongoose
+1 Birthing Boughs
+1 Black Market Connections
+1 Bloodline Pretender
+1 Breeding Pool
+1 Cascading Cataracts
+1 Changeling Outcast
+1 Chromatic Lantern
+1 Chrome Mox
+1 City of Brass
+1 Command Tower
+1 Commander's Sphere
+1 Contested Cliffs
+1 Crumbling Necropolis
+1 Demonic Tutor
+1 Dragon's Hoard
+1 Eerie Interlude
+1 Elesh Norn, Mother of Machines
+1 Ephemerate
+1 Exotic Orchard
+1 Fellwar Stone
+1 Fortified Beachhead
+1 Frontier Bivouac
+1 Ghostway
+1 Graveshifter
+1 Guardian Gladewalker
+1 Hallowed Fountain
+1 Haunting Voyage
+1 Heap Doll
+1 Helm of the Host
+1 Impostor of the Sixth Pride
+1 Indatha Triome
+1 Inventors' Fair
+1 Irregular Cohort
+1 Jetmir's Garden
+1 Jungle Shrine
+1 Ketria Triome
+1 Kindred Discovery
+1 Lightning Greaves
+1 Mana Confluence
+1 Mana Crypt
+1 Masked Vandal
+1 Maskwood Nexus
+1 Mirror Entity
+1 Mithril Coat
+1 Molten Echoes
+1 Morophon, the Boundless
+1 Mothdust Changeling
+1 Mox Opal
+1 Opulent Palace
+1 Overgrown Tomb
+1 Panharmonicon
+1 Raffine's Tower
+1 Raugrin Triome
+1 Realmbreaker, the Invasion Tree
+1 Realmwalker
+1 Reflections of Littjara
+1 Reliquary Tower
+1 Roaming Throne
+1 Rooftop Storm
+1 Sakashima the Impostor
+1 Savage Lands
+1 Savai Triome
+1 Scarecrone
+1 Scuttlemutt
+1 Seaside Citadel
+1 Secluded Courtyard
+1 Shapesharer
+1 Skeletal Changeling
+1 Sol Ring
+1 Spara's Headquarters
+1 Spark Double
+1 Steam Vents
+1 Stomping Ground
+1 Swarmyard
+1 Swiftfoot Boots
+1 Taurean Mauler
+1 Teleportation Circle
+1 Temple Garden
+1 Tempt with Discovery
+1 The Great Henge
+1 The Meathook Massacre
+1 The One Ring
+1 The World Tree
+1 Timeless Lotus
+1 Universal Automaton
+1 Unsettled Mariner
+1 Vanquisher's Banner
+1 Venomous Changeling
+1 Watery Grave
+1 Whip of Erebos
+1 Wingrattle Scarecrow
+1 Woodland Changeling
+1 Xander's Lounge
+1 Zagoth Triome
+1 Ziatora's Proving Ground
+
+Sideboard: 
+1 Coat of Arms
+1 Cryptic Gateway
+1 Descendants' Path
+1 Necroduality
+1 Path to Exile

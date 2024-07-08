@@ -1,0 +1,128 @@
+1 Oloro, Ageless Ascetic 
+1 Academy Ruins
+1 Aclazotz, Deepest Betrayal // Temple of the Dead
+1 Adarkar Wastes
+1 Ajani's Welcome
+1 Alhammarret's Archive
+1 Alms Collector
+1 Ancient Tomb
+1 Anguished Unmaking
+1 Aqueous Form
+1 Archivist of Oghma
+1 Arrest
+1 Azorius Chancery
+1 Baleful Strix
+1 Basilisk Collar
+1 Bloodthirsty Aerialist
+1 Careful Study
+1 Caves of Koilos
+1 Chain of Vapor
+1 Cliffhaven Vampire
+1 Command Tower
+1 Concealed Courtyard
+1 Consecrated Sphinx
+1 Counterspell
+1 Creeping Bloodsucker
+1 Cyclonic Rift
+1 Damnation
+1 Darkslick Shores
+1 Darksteel Mutation
+1 Demonic Tutor
+1 Diabolic Intent
+1 Dimir Aqueduct
+1 Dispel
+1 Dovin's Veto
+1 Drana's Emissary
+1 Drannith Magistrate
+1 Drogskol Reaver
+1 Drowned Catacomb
+1 Elesh Norn, Mother of Machines
+1 Enlightened Tutor
+1 Exotic Orchard
+1 Exquisite Blood
+1 Flooded Strand
+1 Generous Gift
+1 Ghostly Prison
+1 Glacial Fortress
+1 Godless Shrine
+1 Grave Pact
+1 Hall of Heliod's Generosity
+1 Hallowed Fountain
+1 Hindering Light
+1 Howling Mine
+1 Idyllic Tutor
+1 Isolated Chapel
+1 Kaya's Ghostform
+1 Knight of the White Orchid
+1 Leyline of the Void
+1 Library of Leng
+1 Lightning Greaves
+1 Mana Confluence
+1 Mana Crypt
+1 Mana Leak
+1 Mana Vault
+1 Marauding Blight-Priest
+1 Marsh Flats
+1 Massacre Girl
+1 Maze of Ith
+1 Meandering River
+1 Miscalculation
+1 Mithril Coat
+1 Morphic Pool
+1 Mulldrifter
+1 Mystic Remora
+1 Necropotence
+1 Negate
+1 Nimbus Maze
+1 Nyx-Fleece Ram
+1 Oppression
+1 Orzhov Basilica
+1 Polluted Delta
+1 Ponder
+1 Pongify
+1 Prairie Stream
+1 Preordain
+1 Propaganda
+1 Rapid Hybridization
+1 Reliquary Tower
+1 Rhystic Study
+1 Rogue's Passage
+1 Sanguine Bond
+1 Scrubland
+1 Sea of Clouds
+1 Seachrome Coast
+1 Serum Visions
+1 Shadowspear
+1 Sheoldred, the Apocalypse
+1 Shield Sphere
+1 Shielded by Faith
+1 Smothering Tithe
+1 Sol Ring
+1 Soul Warden
+1 Soul's Attendant
+1 Spellbook
+1 Stormscape Familiar
+1 Sunken Hollow
+1 Sunscorch Regent
+1 Supreme Verdict
+1 Suture Priest
+1 Swan Song
+1 Swords to Plowshares
+1 Teferi's Protection
+1 The Second Doctor
+1 Thought Vessel
+1 Tolaria West
+1 Tundra
+1 Underground River
+1 Underground Sea
+1 Unsubstantiate
+1 Urborg, Tomb of Yawgmoth
+1 Vampiric Rites
+1 Vampiric Tutor
+1 Voice of the Blessed
+1 Wall of Hope
+1 Wall of Omens
+1 Waste Not
+1 Watery Grave
+1 Windfall
+1 Wishclaw Talisman
