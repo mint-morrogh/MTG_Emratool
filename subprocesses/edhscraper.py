@@ -174,10 +174,12 @@ def as_commander():
         themes_div = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'NavigationPanel_themes__E1O6V')))
         themes = []
         for theme in themes_div.find_elements(By.TAG_NAME, 'a'):
-            href = theme.get_attribute('href')
-            theme_name = href.split('/')[-1]
-            theme_count = theme.find_element(By.CLASS_NAME, 'badge').text
-            themes.append({'theme': theme_name, 'count': theme_count})
+            if 'btn-secondary' in theme.get_attribute('class'):
+                href = theme.get_attribute('href')
+                theme_name = href.split('/')[-1]
+                theme_label = theme.find_element(By.CLASS_NAME, 'NavigationPanel_label__xMLz1').text
+                theme_count = theme.find_element(By.CLASS_NAME, 'badge').text
+                themes.append({'theme': theme_name, 'label': theme_label, 'count': theme_count})
     except TimeoutException:
         print("Timed out waiting for themes.")
         themes = []

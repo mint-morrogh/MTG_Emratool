@@ -6,9 +6,9 @@ sg.theme('DarkBlue9')
 
 version = '0.34'
 
-# after searching for a theme, in the theme dropdown, the chosen theme turns into the commander url, 
-# which becomes a choice in the theme dropdown. have it check if the href contains 3 /s and if it doesn't
-# dont display that theme as a choice
+#This works! now, when loading a deck by default no themes are selected. this is expected behavior, however, once a theme has been selected, and we analyze the deck again, while it loads the correct URL, in the GUI of this application, we dont see the selected theme displayed. is there an easy way to keep the selected theme shown in the dropdown menu of the GUI?
+
+
 
 # have theme also stay in the dropdown when selected
 
