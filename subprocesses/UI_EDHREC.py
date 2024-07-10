@@ -11,6 +11,33 @@ sg.theme('DarkBlue2')
 
 
 #######################################
+
+# Function to update the themes dropdown
+def update_themes_dropdown(window):
+    # Load themes from edhrec_themes.json
+    with open('resources/EDHScraper/edhrec_themes.json', 'r') as f:
+        data = json.load(f)
+        themes = data['themes']
+
+    # Load the selected theme from selected_theme.json
+    with open('resources/EDHScraper/selected_theme.json', 'r') as f:
+        selected_data = json.load(f)
+        selected_theme = selected_data.get('selected_theme', '')
+
+    # Extract theme names
+    theme_names = [theme['theme'].replace('/', '') for theme in themes]
+
+    # Debug: Print the themes and the selected theme
+    print(f"Available themes: {theme_names}")
+    print(f"Selected theme: {selected_theme}")
+
+    # Update the dropdown with the list of themes
+    window['-THEME-'].update(values=theme_names)
+
+    # Set the current value of the dropdown to the selected theme
+
+    window['-THEME-'].update(value=selected_theme)
+
 # Create a dictionary to store cached image bytes, with card names as keys and image bytes as values
 image_cache = {}
 
@@ -883,17 +910,7 @@ while True:
 
         ####################################################################
 
-
-        # update themes dropdown
-        with open('resources/EDHScraper/edhrec_themes.json', 'r') as f:
-            data = json.load(f)
-            themes = data['themes']
-            selected_theme = data.get('selected_theme', '')
-
-        # Extract only the theme names for the dropdown update, excluding the selected theme
-        theme_names = [theme['theme'].replace('/', '') for theme in themes if theme['theme'] != selected_theme]
-
-        window['-THEME-'].update(values=theme_names)
+        update_themes_dropdown(window)  # Update the themes dropdown after analysis
 
         
 
