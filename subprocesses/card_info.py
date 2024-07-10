@@ -366,7 +366,8 @@ def get_landbase(decklist_file):
 
     staples = {
         "Command Tower",
-        "Urza's Saga"
+        "Urza's Saga",
+        "Talon Gates of Madara"
     }
 
     # Conditional Lands based on majority color
@@ -376,7 +377,8 @@ def get_landbase(decklist_file):
         "Urborg": ["B"],
         "Urborg, Tomb of Yawgmoth": ["B"],
         "Bojuka Bog": ["B"],
-        "Agadeem's Awakening": ["B"]
+        "Agadeem's Awakening": ["B"],
+        "Shizo, Death's Storehouse": ["B"]
     }
 
     percent45_red = {
@@ -392,7 +394,8 @@ def get_landbase(decklist_file):
     } 
 
     percent45_blue = {
-        "Mystic Sanctuary": ["U"]
+        "Mystic Sanctuary": ["U"],
+        "Soporific Springs": ["U"]
     }
 
     percent45_white = {
@@ -416,6 +419,7 @@ def get_landbase(decklist_file):
         "Cascading Cataracts",
         "Reflecting Pool",
         "Spire of Industry"
+        "Planar Nexus"
     }
 
     three_or_more_staples = {
@@ -423,7 +427,8 @@ def get_landbase(decklist_file):
     }
 
     two_or_more_staples = {
-        "Field of the Dead"
+        "Field of the Dead",
+        "Horizon of Progress"
     }
 
     three_or_less_staples = {
@@ -433,7 +438,8 @@ def get_landbase(decklist_file):
 
     two_or_less_staples = {
         "Nykthos, Shrine to Nyx",
-        "War Room"
+        "War Room", 
+        "Demolition Field"
     }
 
     # For tribal 
@@ -616,12 +622,7 @@ def get_landbase(decklist_file):
         "Ziatora's Proving Ground": ["B", "R", "G"],
         "Xander's Lounge": ["U", "B", "R"],
         "Raffine's Tower": ["W", "U", "B"],
-        "Spara's Headquarters": ["G", "W", "U"],
-        "Savage Lands": ["B", "R", "G"],
-        "Seaside Citadel": ["G", "W", "U"],
-        "Arcane Sanctum": ["B", "W", "U"],
-        "Crumbling Necropolis": ["B", "R", "U"],
-        "Jungle Shrine": ["G", "R", "W"]
+        "Spara's Headquarters": ["G", "W", "U"]
     }
 
     cycling_lands = {
@@ -701,6 +702,22 @@ def get_landbase(decklist_file):
         "Lair of the Hydra": {"G"}
     }
 
+    MH3_monos = {
+        "Monumental Henge": ["W"],
+        "Archway of Innovation": ["U"],
+        "Spymaster's Vault": ["B"],
+        "Arena of Glory": ["R"],
+        "Shifting Woodland": ["G"]
+    }
+
+    hidden_monos = {
+        "Hidden Courtyard": ["W"],
+        "Hidden Cataract": ["U"],
+        "Hidden Necropolis": ["B"],
+        "Hidden Volcano": ["R"],
+        "Hidden Nursery": ["G"]
+    }
+
     snow_covered_monos = {
         "Snow-covered Plains": ["W"],
         "Snow-covered Island": ["U"],
@@ -734,6 +751,16 @@ def get_landbase(decklist_file):
     if num_colors >= 2:
         for land_name in rainbow_lands:
             landbase.append(land_name)
+
+
+    # Add tri lands if the deck has exactly 3 colors
+    if num_colors == 3:
+        for land_name, colors in tri_lands.items():
+            if all(color in deck_colors.keys() for color in colors):
+                if all(deck_colors[color] > 0 for color in colors):
+                    landbase.append(land_name)
+    tri_lands_added = True  # Mark tri lands as added
+
 
     # if color is 45% majority, add mono colored staples
     for land_name, colors in percent45_black.items():
@@ -861,11 +888,12 @@ def get_landbase(decklist_file):
                     landbase.append(land_name)
 
     # tri lands
-    if num_colors >= 3:
+    if num_colors >= 3 and not tri_lands_added:
         for land_name, colors in tri_lands.items():
             if all(color in deck_colors.keys() for color in colors):
                 if all(deck_colors[color] > 0 for color in colors):
-                    landbase.append(land_name)
+                    if land_name not in landbase:  # Ensure no duplicates
+                        landbase.append(land_name)
 
     # filter lands
     if num_colors <= 3:
@@ -911,6 +939,13 @@ def get_landbase(decklist_file):
     # pathway lands
     if num_colors == 2:
         for land_name, colors in pathway_lands.items():
+            if all(color in deck_colors.keys() for color in colors):
+                if all(deck_colors[color] > 0 for color in colors):
+                    landbase.append(land_name)
+
+    # mono color hidden lands
+    if num_colors <= 2:
+        for land_name, colors in hidden_monos.items():
             if all(color in deck_colors.keys() for color in colors):
                 if all(deck_colors[color] > 0 for color in colors):
                     landbase.append(land_name)

@@ -1,4 +1,11 @@
 
+################## Version 0.35 #################### 
+7/10/24
+**BUG FIXED: EDHREC Fetcher theme dropdown fixed to display current selected theme
+Added Hidden lands, MH3 Mono Lands, Horizon of Progress, Planar Nexus, Demolition Field, and more...
+Added "Talon Gates of Madara" as a full on land staple. will build with this and see how this feels
+
+
 ################## Version 0.34 #################### 
 7/8/24
 Wow! What a long break. been using this at version 0.33 for a while now.

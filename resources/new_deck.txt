@@ -1,108 +1,76 @@
-Deck: 9_Edgar Vampires v2
-
-Commander: 
-1 Edgar Markov
-
-Main: 
-1 Agadeem's Awakening
-1 Ancient Tomb
-1 Anointed Procession
-1 Anowon, the Ruin Sage
-1 Arcane Signet
-1 Arid Mesa
-1 Badlands
-1 Black Market Connections
-1 Blood Artist
-1 Blood Crypt
-1 Bloodline Keeper
-1 Bloodstained Mire
-1 Butcher of Malakir
-1 Cabal Coffers
-1 Captivating Vampire
-1 Castle Locthwain
-1 Cathars' Crusade
-1 Cavern of Souls
-1 Champion of Dusk
+1 Academy Manufactor
+1 Argentum Armor
+1 Batterskull
+1 Big Score
+1 Birgi, God of Storytelling
+1 Blackblade Reforged
+1 Breeches, Brazen Plunderer
+1 Champion's Helm
 1 Chrome Mox
-1 City of Brass
-1 Clifftop Retreat
-1 Command Tower
-1 Cordial Vampire
-1 Creeping Bloodsucker
-1 Cruel Celebrant
-1 Defiant Bloodlord
-1 Demonic Tutor
-1 Door of Destinies
-1 Dragonskull Summit
-1 Drana and Linvala
-1 Drana, Liberator of Malakir
-1 Edgar, Charmed Groom
-1 Elenda, the Dusk Rose
-1 Exotic Orchard
-1 Exquisite Blood
-1 Field of the Dead
-1 Fracture
-1 Godless Shrine
-1 Grave Pact
-1 Haunted Ridge
-1 Herald's Horn
-1 Idol of Oblivion
-1 Indulgent Aristocrat
-1 Isolated Chapel
-1 Knight of the Ebon Legion
-1 Legion Lieutenant
-1 Lightning Greaves
-1 Luxury Suite
-1 Mana Confluence
+1 Cliffhaven Kitesail
+1 Combat Celebrant
+1 Commander's Plate
+1 Curse of Hospitality
+1 Curse of Opulence
+1 Dockside Extortionist
+1 Dwarven Mine
+1 Embercleave
+1 Endless Atlas
+1 Etali, Primal Storm
+1 Fable of the Mirror-Breaker
+1 Fireshrieker
+1 Gamble
+1 Godo, Bandit Warlord
+1 Goldspan Dragon
+1 Goldvein Pick
+1 Hammer of Nazahn
+1 Helm of the Host
+1 Hero's Blade
+1 Impulsive Pilferer
+1 Inferno of the Star Mounts
+1 Infiltration Lens
+1 Jeska's Will
+1 Jeweled Lotus
+1 Key to the City
+1 Lotus Petal
+1 Loxodon Warhammer
+1 Loyal Apprentice
+1 Magda, Brazen Outlaw
+1 Magus of the Wheel
 1 Mana Crypt
-1 Marsh Flats
-1 Mavren Fein, Dusk Apostle
-1 Nighthawk Scavenger
-1 Olivia Voldaren
-1 Olivia's Wrath
-1 Olivia, Crimson Bride
-1 Path of Ancestry
-1 Path to Exile
-1 Patron of the Vein
-1 Phyrexian Arena
-1 Plateau
-1 Radiant Destiny
-1 Rakish Heir
-1 Ruinous Ultimatum
-1 Sacred Foundry
-1 Sanctum Seeker
-1 Sanguine Bond
-1 Savai Triome
-1 Scrubland
-1 Secluded Courtyard
-1 Shared Animosity
-1 Shattered Sanctum
-1 Silent Clearing
+1 March of Reckless Joy
+1 Mask of Memory
+1 Mox Amber
+1 Mox Opal
+1 Myriad Landscape
+1 Nettlecyst
+1 Professional Face-Breaker
+1 Prying Blade
+1 Quicksmith Genius
+1 Quietus Spike
+1 Rain of Riches
+1 Ruby Medallion
+1 Sanctuary Blade
+1 Seething Song
+1 Sensei's Divining Top
+1 Shadowspear
+24 Snow-Covered Mountain
 1 Sol Ring
-1 Sorin, Imperious Bloodlord
-1 Sorin, Vengeful Bloodlord
-1 Spectator Seating
-1 Strip Mine
-1 Stromkirk Captain
-1 Sunbaked Canyon
-1 Sundown Pass
+1 Sticky Fingers
+1 Storm-Kiln Artist
 1 Swiftfoot Boots
-1 Swords to Plowshares
-1 The Meathook Massacre
-1 The One Ring
-1 Tocasia's Welcome
-1 Twilight Prophet
-1 Urborg
-1 Urborg, Tomb of Yawgmoth
-1 Vampire Nighthawk
-1 Vampire Socialite
-1 Vampire of the Dire Moon
-1 Vanquisher's Banner
-1 Vault of Champions
-1 Vito, Thorn of the Dusk Rose
-1 Vraan, Executioner Thane
-1 Welcoming Vampire
-1 Yahenni, Undying Partisan
-
-Sideboard: 
-1 Blind Obedience
+1 Sword of Feast and Famine
+1 Sword of Fire and Ice
+1 Sword of Hearth and Home
+1 Sword of the Animist
+1 The Reaver Cleaver
+1 Tome of Legends
+1 Torbran, Thane of Red Fell
+1 Trailblazer's Boots
+1 Treasure Map
+1 Treasure Nabber
+1 Treasure Vault
+1 Umezawa's Jitte
+1 Valakut, the Molten Pinnacle
+1 War Room
+1 Xorn

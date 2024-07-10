@@ -1,4 +1,4 @@
-Cards only in old deck (119 cut cards):
+Cards only in old deck (125 cut cards):
 
 1 Oloro, Ageless Ascetic
 1 Academy Ruins
@@ -25,9 +25,11 @@ Cards only in old deck (119 cut cards):
 1 Consecrated Sphinx
 1 Counterspell
 1 Creeping Bloodsucker
+1 Cyclonic Rift
 1 Damnation
 1 Darkslick Shores
 1 Darksteel Mutation
+1 Demonic Tutor
 1 Diabolic Intent
 1 Dimir Aqueduct
 1 Dispel
@@ -56,6 +58,7 @@ Cards only in old deck (119 cut cards):
 1 Knight of the White Orchid
 1 Leyline of the Void
 1 Library of Leng
+1 Lightning Greaves
 1 Mana Confluence
 1 Mana Leak
 1 Mana Vault
@@ -65,6 +68,7 @@ Cards only in old deck (119 cut cards):
 1 Maze of Ith
 1 Meandering River
 1 Miscalculation
+1 Mithril Coat
 1 Morphic Pool
 1 Mulldrifter
 1 Mystic Remora
@@ -82,16 +86,17 @@ Cards only in old deck (119 cut cards):
 1 Propaganda
 1 Rapid Hybridization
 1 Reliquary Tower
+1 Rhystic Study
 1 Rogue's Passage
 1 Sanguine Bond
 1 Scrubland
 1 Sea of Clouds
 1 Seachrome Coast
 1 Serum Visions
-1 Shadowspear
 1 Sheoldred, the Apocalypse
 1 Shield Sphere
 1 Shielded by Faith
+1 Smothering Tithe
 1 Soul Warden
 1 Soul's Attendant
 1 Spellbook
@@ -112,6 +117,7 @@ Cards only in old deck (119 cut cards):
 1 Unsubstantiate
 1 Urborg, Tomb of Yawgmoth
 1 Vampiric Rites
+1 Vampiric Tutor
 1 Voice of the Blessed
 1 Wall of Hope
 1 Wall of Omens
@@ -123,61 +129,76 @@ Cards only in old deck (119 cut cards):
 
 New cards to get:
 
-1 Kenrith, the Returned King
-1 Arcane Signet
-1 Ballot Broker
-1 Biomancer's Familiar
-1 Birds of Paradise
-1 Bite of the Black Rose
-1 Black Market Connections
-1 Brago's Representative
-1 Capital Punishment
-1 Chromatic Lantern
+1 Academy Manufactor
+1 Argentum Armor
+1 Batterskull
+1 Big Score
+1 Birgi, God of Storytelling
+1 Blackblade Reforged
+1 Breeches, Brazen Plunderer
+1 Champion's Helm
 1 Chrome Mox
-1 Coercive Portal
-1 Commander's Sphere
-1 Council Guardian
-1 Council's Judgment
-1 Custodi Squire
-1 Círdan the Shipwright
-1 Deadeye Navigator
-1 Decanter of Endless Water
+1 Cliffhaven Kitesail
+1 Combat Celebrant
+1 Commander's Plate
+1 Curse of Hospitality
+1 Curse of Opulence
 1 Dockside Extortionist
-1 Elrond of the White Council
-1 Emissary Green
-1 Erestor of the Council
-1 Expropriate
-1 Fellwar Stone
-1 Forest
-1 Grudge Keeper
-1 Illusion of Choice
-1 Imperial Seal
-1 Island
-1 Lieutenants of the Guard
-1 Magister of Worth
-1 Messenger Jays
-1 Mob Verdict
-1 Model of Unity
-1 Mountain
-1 Nature's Lore
-1 Orchard Elemental
-1 Plains
-1 Plea for Power
-1 Sail into the West
-1 Selvala's Stampede
-1 Selvala, Explorer Returned
-1 Skyshroud Claim
-1 Split Decision
-1 Swamp
+1 Dwarven Mine
+1 Embercleave
+1 Endless Atlas
+1 Etali, Primal Storm
+1 Fable of the Mirror-Breaker
+1 Fireshrieker
+1 Gamble
+1 Godo, Bandit Warlord
+1 Goldspan Dragon
+1 Goldvein Pick
+1 Hammer of Nazahn
+1 Helm of the Host
+1 Hero's Blade
+1 Impulsive Pilferer
+1 Inferno of the Star Mounts
+1 Infiltration Lens
+1 Jeska's Will
+1 Jeweled Lotus
+1 Key to the City
+1 Lotus Petal
+1 Loxodon Warhammer
+1 Loyal Apprentice
+1 Magda, Brazen Outlaw
+1 Magus of the Wheel
+1 March of Reckless Joy
+1 Mask of Memory
+1 Mox Amber
+1 Mox Opal
+1 Myriad Landscape
+1 Nettlecyst
+1 Professional Face-Breaker
+1 Prying Blade
+1 Quicksmith Genius
+1 Quietus Spike
+1 Rain of Riches
+1 Ruby Medallion
+1 Sanctuary Blade
+1 Seething Song
+1 Sensei's Divining Top
+24 Snow-Covered Mountain
+1 Sticky Fingers
+1 Storm-Kiln Artist
 1 Swiftfoot Boots
-1 Tempt with Discovery
-1 The One Ring
-1 The Valeyard
-1 Tivit, Seller of Secrets
-1 Training Grounds
-1 Trap the Trespassers
-1 Travel Through Caradhras
-1 Trial of a Time Lord
-1 Truth or Consequences
-1 Tyrant's Choice
-1 Zirda, the Dawnwaker
+1 Sword of Feast and Famine
+1 Sword of Fire and Ice
+1 Sword of Hearth and Home
+1 Sword of the Animist
+1 The Reaver Cleaver
+1 Tome of Legends
+1 Torbran, Thane of Red Fell
+1 Trailblazer's Boots
+1 Treasure Map
+1 Treasure Nabber
+1 Treasure Vault
+1 Umezawa's Jitte
+1 Valakut, the Molten Pinnacle
+1 War Room
+1 Xorn

@@ -6,13 +6,8 @@ sg.theme('DarkBlue9')
 
 version = '0.34'
 
-#This works! now, when loading a deck by default no themes are selected. this is expected behavior, however, once a theme has been selected, and we analyze the deck again, while it loads the correct URL, in the GUI of this application, we dont see the selected theme displayed. is there an easy way to keep the selected theme shown in the dropdown menu of the GUI?
-
-
-
-# have theme also stay in the dropdown when selected
-
-# if the deck is exactly 3 colors, prioritize one cycle tri land
+# if commander changes when researching EDHREC Fetcher, should clear the theme selection and reload it,
+# also shouldnt have anything selected
 
 # add battles as a permanent type
 
