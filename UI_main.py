@@ -4,10 +4,12 @@ import webbrowser
 
 sg.theme('DarkBlue9')
 
-version = '0.34'
+version = '0.35'
 
 # if commander changes when researching EDHREC Fetcher, should clear the theme selection and reload it,
 # also shouldnt have anything selected
+
+# wheen bloomburrow releases, three tree city definitly is a tribal staple 
 
 # add battles as a permanent type
 

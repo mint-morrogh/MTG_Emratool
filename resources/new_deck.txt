@@ -1,76 +1,113 @@
-1 Academy Manufactor
-1 Argentum Armor
-1 Batterskull
-1 Big Score
-1 Birgi, God of Storytelling
-1 Blackblade Reforged
-1 Breeches, Brazen Plunderer
-1 Champion's Helm
+Deck: ***9_Animar Surge v2
+
+Commander: 
+1 Animar, Soul of Elements
+
+Main: 
+1 Acidic Slime
+1 Aesi, Tyrant of Gyre Strait
+1 Aggravated Assault
+1 Ancient Tomb
+1 Arcane Signet
+1 Archetype of Endurance
+1 Asceticism
+1 Aspect of Mongoose
+1 Augur of Autumn
+1 Basilisk Collar
+1 Beastcaller Savant
+1 Bident of Thassa
+1 Biophagus
+1 Birds of Paradise
+1 Bloom Tender
+1 Breeding Pool
 1 Chrome Mox
-1 Cliffhaven Kitesail
-1 Combat Celebrant
-1 Commander's Plate
-1 Curse of Hospitality
-1 Curse of Opulence
-1 Dockside Extortionist
-1 Dwarven Mine
-1 Embercleave
-1 Endless Atlas
-1 Etali, Primal Storm
-1 Fable of the Mirror-Breaker
-1 Fireshrieker
-1 Gamble
-1 Godo, Bandit Warlord
-1 Goldspan Dragon
-1 Goldvein Pick
-1 Hammer of Nazahn
-1 Helm of the Host
-1 Hero's Blade
-1 Impulsive Pilferer
-1 Inferno of the Star Mounts
-1 Infiltration Lens
-1 Jeska's Will
-1 Jeweled Lotus
-1 Key to the City
-1 Lotus Petal
-1 Loxodon Warhammer
-1 Loyal Apprentice
-1 Magda, Brazen Outlaw
-1 Magus of the Wheel
+1 City of Brass
+1 Command Tower
+1 Consecrated Sphinx
+1 Craterhoof Behemoth
+1 Death's Presence
+1 Decanter of Endless Water
+1 Delighted Halfling
+1 Dreamroot Cascade
+1 Elvish Mystic
+1 Etali, Primal Conqueror
+1 Exotic Orchard
+1 Fauna Shaman
+1 Field of the Dead
+1 Fierce Empath
+1 Fiery Islet
+1 Forgotten Ancient
+1 Fyndhorn Elves
+1 Gaea's Cradle
+1 Garruk's Packleader
+1 Hinterland Harbor
+1 Hullbreaker Horror
+1 Karplusan Forest
+1 Ketria Triome
+1 Lightning Greaves
+1 Llanowar Elves
+1 Lu Xun, Scholar General
+1 Lurking Predators
+1 Mana Confluence
 1 Mana Crypt
-1 March of Reckless Joy
-1 Mask of Memory
-1 Mox Amber
+1 Misty Rainforest
+1 Mithril Coat
 1 Mox Opal
-1 Myriad Landscape
-1 Nettlecyst
-1 Professional Face-Breaker
-1 Prying Blade
-1 Quicksmith Genius
-1 Quietus Spike
-1 Rain of Riches
-1 Ruby Medallion
-1 Sanctuary Blade
-1 Seething Song
-1 Sensei's Divining Top
+1 Mulldrifter
+1 Ornithopter of Paradise
+1 Palinchron
+1 Path of Ancestry
+1 Pendelhaven
+1 Peregrine Drake
+1 Primal Surge
+1 Primordial Sage
+1 Rattleclaw Mystic
+1 Reclamation Sage
+1 Rejuvenating Springs
+1 Rockfall Vale
+1 Rootbound Crag
+1 Scalding Tarn
 1 Shadowspear
-24 Snow-Covered Mountain
+1 Shaman of Forgotten Ways
+1 Shivan Reef
+1 Silverback Elder
 1 Sol Ring
-1 Sticky Fingers
-1 Storm-Kiln Artist
+1 Somberwald Sage
+1 Soul of the Harvest
+1 Spire Garden
+1 Stomping Ground
+1 Stormcarved Coast
+1 Sulfur Falls
 1 Swiftfoot Boots
-1 Sword of Feast and Famine
-1 Sword of Fire and Ice
-1 Sword of Hearth and Home
-1 Sword of the Animist
-1 The Reaver Cleaver
-1 Tome of Legends
-1 Torbran, Thane of Red Fell
-1 Trailblazer's Boots
-1 Treasure Map
-1 Treasure Nabber
-1 Treasure Vault
-1 Umezawa's Jitte
-1 Valakut, the Molten Pinnacle
-1 War Room
-1 Xorn
+1 Taiga
+1 Talisman of Creativity
+1 Talisman of Curiosity
+1 Temur Ascendancy
+1 Terastodon
+1 Terror of the Peaks
+1 Tidal Barracuda
+1 Toski, Bearer of Secrets
+1 Training Center
+1 Tropical Island
+1 Urabrask the Hidden
+1 Urza's Saga
+1 Vizier of the Menagerie
+1 Void Winnower
+1 Volcanic Island
+1 Wandering Archaic
+1 Warstorm Surge
+1 Waterlogged Grove
+1 Whispersilk Cloak
+1 Wood Elves
+1 Wooded Foothills
+1 Yavimaya Hollow
+1 Yavimaya, Cradle of Growth
+1 Zopandrel, Hunger Dominus
+
+Sideboard: 
+1 Elven Chorus
+1 Guardian Project
+1 Prime Speaker Zegana
+1 Rhystic Study
+1 Surrak Dragonclaw
+1 Tribute to the World Tree

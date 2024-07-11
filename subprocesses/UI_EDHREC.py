@@ -77,6 +77,28 @@ def get_card_image(card_ID):
     image_cache[card_ID] = image_bytes
     time.sleep(0.1)  # Introduce a short delay to avoid hitting the API too frequently
     return image_bytes
+
+def read_new_deck(file_path):
+    with open(file_path, 'r') as file:
+        deck_cards = set()
+        for line in file.readlines():
+            if line.strip() and not line.startswith('#'):
+                parts = line.strip().split(' ', 1)
+                if len(parts) > 1:
+                    deck_cards.add(parts[1].strip().lower())
+                else:
+                    deck_cards.add(parts[0].strip().lower())
+        return deck_cards
+
+def update_listbox_color(window, key, deck_cards, color):
+    listbox_widget = window[key].Widget
+    for i in range(listbox_widget.size()):
+        card_name = listbox_widget.get(i).strip().lower()
+        if card_name not in deck_cards:
+            listbox_widget.itemconfig(i, {'fg': color})
+        else:
+            listbox_widget.itemconfig(i, {'fg': 'white'})
+
 #######################################
 
 
@@ -691,6 +713,7 @@ while True:
     if event == 'Analyze':
         # grab all the info from EDHREC
         deck_text = values['-DECK-']
+        new_deck = read_new_deck('resources/new_deck.txt')
         with open('resources/new_deck.txt', 'w') as f:
             f.write(deck_text)
         subprocess.run(['python', 'subprocesses/extract_commander.py'])
@@ -718,6 +741,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['high_synergy_cards_output'].update(values=high_synergy_cards)
+        update_listbox_color(window, 'high_synergy_cards_output', new_deck, '#00FF00')
 
         #############################
         # read the new cards json file
@@ -735,6 +759,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['new_cards_output'].update(values=new_cards)
+        update_listbox_color(window, 'new_cards_output', new_deck, '#00FF00')
 
         #############################
         # read the top cards json file
@@ -752,6 +777,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['top_cards_output'].update(values=top_cards)
+        update_listbox_color(window, 'top_cards_output', new_deck, '#00FF00')
 
         #############################
         # read the creature cards json file
@@ -769,6 +795,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['creatures_output'].update(values=creature_cards)
+        update_listbox_color(window, 'creatures_output', new_deck, '#00FF00')
 
         #############################
         # read the enchantments cards json file
@@ -786,6 +813,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['enchantments_output'].update(values=enchantments_cards)
+        update_listbox_color(window, 'enchantments_output', new_deck, '#00FF00')
 
         #############################
         # read the planeswalkers cards json file
@@ -803,6 +831,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['planeswalkers_output'].update(values=planeswalkers_cards)
+        update_listbox_color(window, 'planeswalkers_output', new_deck, '#00FF00')
 
         #############################
         # read the instant cards json file
@@ -820,6 +849,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['instants_output'].update(values=instants_cards)
+        update_listbox_color(window, 'instants_output', new_deck, '#00FF00')
 
         #############################
         # read the sorceries cards json file
@@ -837,6 +867,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['sorceries_output'].update(values=sorceries_cards)
+        update_listbox_color(window, 'sorceries_output', new_deck, '#00FF00')
 
         #############################
         # read the utility artifact cards json file
@@ -854,6 +885,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['utility_artifacts_output'].update(values=utilityartifacts_cards)
+        update_listbox_color(window, 'utility_artifacts_output', new_deck, '#00FF00')
 
         #############################
         # read the mana artifact cards json file
@@ -871,6 +903,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['mana_artifacts_output'].update(values=manaartifacts_cards)
+        update_listbox_color(window, 'mana_artifacts_output', new_deck, '#00FF00')
 
         #############################
         # read the utility land cards json file
@@ -888,6 +921,7 @@ while True:
 
         # update the high_synergy_cards_output element
         window['utility_lands_output'].update(values=utilitylands_cards)
+        update_listbox_color(window, 'utility_lands_output', new_deck, '#00FF00')
 
         #############################
         # read the land cards json file
@@ -905,13 +939,12 @@ while True:
 
         # update the high_synergy_cards_output element
         window['lands_output'].update(values=lands_cards)
+        update_listbox_color(window, 'lands_output', new_deck, '#00FF00')
 
-
-
-        ####################################################################
-
+        #############################
+        # themes dropdown
         update_themes_dropdown(window)  # Update the themes dropdown after analysis
-
+        
         
 
 window.close()

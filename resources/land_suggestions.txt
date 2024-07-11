@@ -1,13 +1,51 @@
-1 Snow-covered Mountain
 1 Urza's Saga
+1 Talon Gates of Madara
 1 Command Tower
-1 Hammerheim
-1 Valakut, The Molten Pinnacle
-1 Shatterskull Smashing
+1 Mana Confluence
+1 City of Brass
+1 Path of Ancestry
+1 Cabal Coffers
+1 Urborg
+1 Urborg, Tomb of Yawgmoth
+1 Bojuka Bog
+1 Agadeem's Awakening
+1 Shizo, Death's Storehouse
+1 Exotic Orchard
+1 Field of the Dead
+1 Horizon of Progress
 1 Strip Mine
 1 Ancient Tomb
-1 War Room
-1 Nykthos, Shrine to Nyx
-1 Sokenzan, Crucible of Defiance
-1 Hidden Volcano
-1 Den of the Bugbear
+1 Cavern of Souls
+1 Secluded Courtyard
+1 Badlands
+1 Scrubland
+1 Plateau
+1 Bloodstained Mire
+1 Marsh Flats
+1 Arid Mesa
+1 Sacred Foundry
+1 Blood Crypt
+1 Godless Shrine
+1 Haunted Ridge
+1 Shattered Sanctum
+1 Sundown Pass
+1 Luxury Suite
+1 Vault of Champions
+1 Spectator Seating
+1 Silent Clearing
+1 Sunbaked Canyon
+1 Dragonskull Summit
+1 Isolated Chapel
+1 Clifftop Retreat
+1 Sulfurous Springs
+1 Caves of Koilos
+1 Battlefield Forge
+1 Graven Cairns
+1 Fetid Heath
+1 Rugged Prairie
+1 Canyon Slough
+1 Tainted Field
+1 Tainted Peak
+1 Sulfurous Mire
+1 Snowfield Sinkhole
+1 Alpine Meadow
