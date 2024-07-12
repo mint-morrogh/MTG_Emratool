@@ -1,113 +1,66 @@
-Deck: ***9_Animar Surge v2
-
-Commander: 
-1 Animar, Soul of Elements
-
-Main: 
-1 Acidic Slime
-1 Aesi, Tyrant of Gyre Strait
-1 Aggravated Assault
-1 Ancient Tomb
-1 Arcane Signet
-1 Archetype of Endurance
+1 Kruphix, God of Horizons
+1 Artisan of Kozilek
 1 Asceticism
-1 Aspect of Mongoose
-1 Augur of Autumn
-1 Basilisk Collar
-1 Beastcaller Savant
-1 Bident of Thassa
-1 Biophagus
-1 Birds of Paradise
-1 Bloom Tender
-1 Breeding Pool
-1 Chrome Mox
-1 City of Brass
-1 Command Tower
-1 Consecrated Sphinx
-1 Craterhoof Behemoth
-1 Death's Presence
-1 Decanter of Endless Water
-1 Delighted Halfling
-1 Dreamroot Cascade
-1 Elvish Mystic
-1 Etali, Primal Conqueror
-1 Exotic Orchard
-1 Fauna Shaman
-1 Field of the Dead
-1 Fierce Empath
-1 Fiery Islet
-1 Forgotten Ancient
-1 Fyndhorn Elves
-1 Gaea's Cradle
-1 Garruk's Packleader
-1 Hinterland Harbor
-1 Hullbreaker Horror
-1 Karplusan Forest
-1 Ketria Triome
+1 Awakening Zone
+1 Bane of Bala Ged
+1 Conduit of Ruin
+1 Cyclonic Rift
+1 Darksteel Monolith
+1 Deepfathom Skulker
+1 Defense of the Heart
+1 Doubling Cube
+1 Echoes of Eternity
+1 Eldrazi Conscription
+1 Eldrazi Temple
+1 Eldritch Immunity
+1 Emrakul's Influence
+1 Emrakul, the Promised End
+1 Emrakul, the World Anew
+1 Endbringer
+1 Farseek
+1 Flayer of Loyalties
+1 Forsaken Monument
+1 From Beyond
+1 Garruk's Uprising
+1 It That Betrays
+1 It That Heralds the End
+1 Kozilek's Unsealing
+1 Kozilek, Butcher of Truth
+1 Kozilek, the Broken Reality
+1 Kozilek, the Great Distortion
 1 Lightning Greaves
-1 Llanowar Elves
-1 Lu Xun, Scholar General
-1 Lurking Predators
-1 Mana Confluence
-1 Mana Crypt
-1 Misty Rainforest
-1 Mithril Coat
-1 Mox Opal
-1 Mulldrifter
-1 Ornithopter of Paradise
-1 Palinchron
-1 Path of Ancestry
-1 Pendelhaven
-1 Peregrine Drake
-1 Primal Surge
-1 Primordial Sage
-1 Rattleclaw Mystic
-1 Reclamation Sage
-1 Rejuvenating Springs
-1 Rockfall Vale
-1 Rootbound Crag
-1 Scalding Tarn
-1 Shadowspear
-1 Shaman of Forgotten Ways
-1 Shivan Reef
-1 Silverback Elder
+1 Mana Reflection
+1 Nature's Lore
+1 Nulldrifter
+1 Oblivion Sower
+1 Omniscience
+1 Path of Annihilation
+1 Pathrazer of Ulamog
+1 Planar Bridge
+1 Portal to Phyrexia
+1 Quicksilver Amulet
+1 Reflections of Littjara
+1 Seedborn Muse
+1 Skyshroud Claim
 1 Sol Ring
-1 Somberwald Sage
-1 Soul of the Harvest
-1 Spire Garden
-1 Stomping Ground
-1 Stormcarved Coast
-1 Sulfur Falls
 1 Swiftfoot Boots
-1 Taiga
-1 Talisman of Creativity
-1 Talisman of Curiosity
-1 Temur Ascendancy
-1 Terastodon
-1 Terror of the Peaks
-1 Tidal Barracuda
-1 Toski, Bearer of Secrets
-1 Training Center
-1 Tropical Island
-1 Urabrask the Hidden
-1 Urza's Saga
-1 Vizier of the Menagerie
+1 Sylvan Library
+1 Sylvan Scrying
+1 Tempt with Discovery
+1 The Great Henge
+1 The One Ring
+1 Three Visits
+1 Titan's Presence
+1 Ugin's Binding
+1 Ugin, the Ineffable
+1 Ugin, the Spirit Dragon
+1 Ulamog's Crusher
+1 Ulamog, the Ceaseless Hunger
+1 Ulamog, the Defiler
+1 Ulamog, the Infinite Gyre
+1 Up the Beanstalk
 1 Void Winnower
-1 Volcanic Island
-1 Wandering Archaic
-1 Warstorm Surge
-1 Waterlogged Grove
-1 Whispersilk Cloak
-1 Wood Elves
-1 Wooded Foothills
-1 Yavimaya Hollow
-1 Yavimaya, Cradle of Growth
-1 Zopandrel, Hunger Dominus
-
-Sideboard: 
-1 Elven Chorus
-1 Guardian Project
-1 Prime Speaker Zegana
-1 Rhystic Study
-1 Surrak Dragonclaw
-1 Tribute to the World Tree
+1 Wilderness Reclamation
+1 World Breaker
+1 Zendikar Resurgent
+1 Zhulodok, Void Gorger

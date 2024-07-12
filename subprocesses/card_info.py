@@ -523,6 +523,7 @@ def get_landbase(decklist_file):
         "Hallowed Fountain": ["W", "U"],
         "Stomping Ground": ["R", "G"],
         "Godless Shrine": ["B", "W"],
+        "Steam Vents": ["U", "R"],
         "Overgrown Tomb": ["B", "G"]
     }
 
