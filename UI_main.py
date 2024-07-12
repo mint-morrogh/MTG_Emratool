@@ -5,7 +5,7 @@ import subprocess
 
 sg.theme('DarkBlue9')
 
-version = '0.35'
+version = '0.36'
 
 # when you pull up a tool, auto minimize UI_Main and when a tool is closed, bring it back up
 

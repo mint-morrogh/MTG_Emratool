@@ -1,4 +1,8 @@
 
+################## Version 0.36 #################### 
+7/12/24
+Added subprocess support for all menu items, tools now minimize the main UI and restore as close to eliminate clutter
+
 ################## Version 0.35 #################### 
 7/10/24
 **BUG FIXED: EDHREC Fetcher theme dropdown fixed to display current selected theme
