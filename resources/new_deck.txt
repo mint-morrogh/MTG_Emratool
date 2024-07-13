@@ -1,66 +1,95 @@
-1 Kruphix, God of Horizons
-1 Artisan of Kozilek
-1 Asceticism
-1 Awakening Zone
-1 Bane of Bala Ged
-1 Conduit of Ruin
-1 Cyclonic Rift
-1 Darksteel Monolith
-1 Deepfathom Skulker
-1 Defense of the Heart
-1 Doubling Cube
-1 Echoes of Eternity
-1 Eldrazi Conscription
-1 Eldrazi Temple
-1 Eldritch Immunity
-1 Emrakul's Influence
-1 Emrakul, the Promised End
-1 Emrakul, the World Anew
-1 Endbringer
-1 Farseek
-1 Flayer of Loyalties
-1 Forsaken Monument
-1 From Beyond
-1 Garruk's Uprising
-1 It That Betrays
-1 It That Heralds the End
-1 Kozilek's Unsealing
-1 Kozilek, Butcher of Truth
-1 Kozilek, the Broken Reality
-1 Kozilek, the Great Distortion
+Deck: 8_Unicorns v3
+
+Commander: 
+1 Lathiel, the Bounteous Dawn
+
+Main: 
+1 Abundance
+1 Abzan Battle Priest
+1 Accomplished Alchemist
+1 Aetherflux Reservoir
+1 Ajani's Pridemate
+1 Alhammarret's Archive
+1 Angel of Vitality
+1 Archangel of Thune
+1 Beacon of Immortality
+1 Blossoming Bogbeast
+1 Blossoming Sands
+1 Branchloft Pathway
+1 Canopy Vista
+1 Celestial Mantle
+1 Celestial Unicorn
+1 Celestine, the Living Saint
+1 Cleric Class
+1 Colossal Majesty
+1 Command Tower
+1 Conclave Mentor
+1 Cosmos Elixir
+1 Crested Sunmare
+1 Daxos, Blessed by the Sun
+1 Distinguished Conjurer
+1 Essence Warden
+1 Fortified Village
+1 Fountain of Renewal
+1 Gaea's Cradle
+1 Gavony Township
+1 Graypelt Refuge
+1 Healer's Hawk
+1 Heliod's Intervention
+1 Heliod, Sun-Crowned
+1 Inspiring Call
+1 Kabira Crossroads
+1 Knight of Autumn
 1 Lightning Greaves
-1 Mana Reflection
-1 Nature's Lore
-1 Nulldrifter
-1 Oblivion Sower
-1 Omniscience
-1 Path of Annihilation
-1 Pathrazer of Ulamog
-1 Planar Bridge
-1 Portal to Phyrexia
-1 Quicksilver Amulet
-1 Reflections of Littjara
-1 Seedborn Muse
+1 Loxodon Warhammer
+1 Loyal Unicorn
+1 Lunarch Veteran
+1 Mana Crypt
+1 Nykthos Paragon
+1 Overgrown Farmland
+1 Path to Exile
+1 Prosperous Innkeeper
+1 Radiant Fountain
+1 Radiant Grove
+1 Rhox Faithmender
+1 Rogue's Passage
+1 Savannah
+1 Scavenging Ooze
+1 Serra Ascendant
+1 Shadowspear
+1 Shalai, Voice of Plenty
+1 Shamanic Revelation
+1 Sigarda's Splendor
 1 Skyshroud Claim
+8 Snow-Covered Forest
+8 Snow-Covered Plains
 1 Sol Ring
+1 Soul Warden
+1 Soul's Attendant
+1 Speaker of the Heavens
+1 Spike Feeder
+1 Sunpetal Grove
+1 Sunscorch Regent
+1 Suture Priest
 1 Swiftfoot Boots
 1 Sylvan Library
-1 Sylvan Scrying
-1 Tempt with Discovery
+1 Talisman of Unity
+1 Temple Garden
+1 Temple of Plenty
 1 The Great Henge
 1 The One Ring
+1 The Ozolith
 1 Three Visits
-1 Titan's Presence
-1 Ugin's Binding
-1 Ugin, the Ineffable
-1 Ugin, the Spirit Dragon
-1 Ulamog's Crusher
-1 Ulamog, the Ceaseless Hunger
-1 Ulamog, the Defiler
-1 Ulamog, the Infinite Gyre
-1 Up the Beanstalk
-1 Void Winnower
-1 Wilderness Reclamation
-1 World Breaker
-1 Zendikar Resurgent
-1 Zhulodok, Void Gorger
+1 Trelasarra, Moon Dancer
+1 Trostani, Selesnya's Voice
+1 Valkyrie Harbinger
+1 Voice of the Blessed
+1 Whispersilk Cloak
+1 Windswept Heath
+1 Worldly Tutor
+1 Yavimaya Hollow
+1 Zopandrel, Hunger Dominus
+
+Sideboard: 
+1 Behemoth Sledge
+1 Soul Net

@@ -1,7 +1,11 @@
+################## Version 0.37 #################### 
+7/13/24
+**BUG FIXED: EDHREC Fetcher now properly reads deck and adds green highlighting when switching between decks, instead of having to press Analyze twice
+**BUG FIXED: threading implemented for main_UI, so when subprocesses run, the main window doesn't have trouble restoring if interrupted
 
 ################## Version 0.36 #################### 
 7/12/24
-Added subprocess support for all menu items, tools now minimize the main UI and restore as close to eliminate clutter
+Added subprocess support for all menu items, tools now minimize the main UI and restore on close to eliminate clutter
 
 ################## Version 0.35 #################### 
 7/10/24

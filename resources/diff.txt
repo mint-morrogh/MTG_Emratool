@@ -1,13 +1,11 @@
-Cards only in old deck (125 cut cards):
+Cards only in old deck (109 cut cards):
 
 1 Oloro, Ageless Ascetic
-1 Academy Ruins
 1 Aclazotz, Deepest Betrayal // Temple of the Dead
 1 Adarkar Wastes
 1 Ajani's Welcome
 1 Alhammarret's Archive
 1 Alms Collector
-1 Ancient Tomb
 1 Anguished Unmaking
 1 Aqueous Form
 1 Archivist of Oghma
@@ -20,7 +18,6 @@ Cards only in old deck (125 cut cards):
 1 Caves of Koilos
 1 Chain of Vapor
 1 Cliffhaven Vampire
-1 Command Tower
 1 Concealed Courtyard
 1 Consecrated Sphinx
 1 Counterspell
@@ -28,7 +25,6 @@ Cards only in old deck (125 cut cards):
 1 Damnation
 1 Darkslick Shores
 1 Darksteel Mutation
-1 Demonic Tutor
 1 Diabolic Intent
 1 Dimir Aqueduct
 1 Dispel
@@ -38,17 +34,12 @@ Cards only in old deck (125 cut cards):
 1 Drogskol Reaver
 1 Drowned Catacomb
 1 Elesh Norn, Mother of Machines
-1 Enlightened Tutor
-1 Exotic Orchard
 1 Exquisite Blood
 1 Flooded Strand
 1 Generous Gift
 1 Ghostly Prison
 1 Glacial Fortress
-1 Godless Shrine
-1 Grave Pact
 1 Hall of Heliod's Generosity
-1 Hallowed Fountain
 1 Hindering Light
 1 Howling Mine
 1 Idyllic Tutor
@@ -57,8 +48,8 @@ Cards only in old deck (125 cut cards):
 1 Knight of the White Orchid
 1 Leyline of the Void
 1 Library of Leng
+1 Lightning Greaves
 1 Mana Confluence
-1 Mana Crypt
 1 Mana Leak
 1 Mana Vault
 1 Marauding Blight-Priest
@@ -80,28 +71,23 @@ Cards only in old deck (125 cut cards):
 1 Polluted Delta
 1 Ponder
 1 Pongify
-1 Prairie Stream
 1 Preordain
 1 Propaganda
 1 Rapid Hybridization
 1 Reliquary Tower
-1 Rhystic Study
 1 Rogue's Passage
 1 Sanguine Bond
 1 Scrubland
 1 Sea of Clouds
 1 Seachrome Coast
 1 Serum Visions
-1 Shadowspear
 1 Sheoldred, the Apocalypse
 1 Shield Sphere
 1 Shielded by Faith
-1 Smothering Tithe
 1 Soul Warden
 1 Soul's Attendant
 1 Spellbook
 1 Stormscape Familiar
-1 Sunken Hollow
 1 Sunscorch Regent
 1 Supreme Verdict
 1 Suture Priest
@@ -109,7 +95,6 @@ Cards only in old deck (125 cut cards):
 1 Swords to Plowshares
 1 Teferi's Protection
 1 The Second Doctor
-1 Thought Vessel
 1 Tolaria West
 1 Tundra
 1 Underground River
@@ -122,73 +107,85 @@ Cards only in old deck (125 cut cards):
 1 Wall of Hope
 1 Wall of Omens
 1 Waste Not
-1 Watery Grave
 1 Windfall
 1 Wishclaw Talisman
 
 
 New cards to get:
 
-1 Kruphix, God of Horizons
-1 Artisan of Kozilek
-1 Asceticism
-1 Awakening Zone
-1 Bane of Bala Ged
-1 Conduit of Ruin
-1 Darksteel Monolith
-1 Deepfathom Skulker
-1 Defense of the Heart
-1 Doubling Cube
-1 Echoes of Eternity
-1 Eldrazi Conscription
-1 Eldrazi Temple
-1 Eldritch Immunity
-1 Emrakul's Influence
-1 Emrakul, the Promised End
-1 Emrakul, the World Anew
-1 Endbringer
-1 Farseek
-1 Flayer of Loyalties
-1 Forsaken Monument
-1 From Beyond
-1 Garruk's Uprising
-1 It That Betrays
-1 It That Heralds the End
-1 Kozilek's Unsealing
-1 Kozilek, Butcher of Truth
-1 Kozilek, the Broken Reality
-1 Kozilek, the Great Distortion
-1 Mana Reflection
-1 Nature's Lore
-1 Nulldrifter
-1 Oblivion Sower
-1 Omniscience
-1 Path of Annihilation
-1 Pathrazer of Ulamog
-1 Planar Bridge
-1 Portal to Phyrexia
-1 Quicksilver Amulet
-1 Reflections of Littjara
-1 Seedborn Muse
-1 Skyshroud Claim
+1 Academy Manufactor
+1 Akroma's Memorial
+1 Ancient Den
+1 Anointed Procession
+1 Arcane Sanctum
+1 Arcane Signet
+1 Armix, Filigree Thrasher
+1 Bident of Thassa
+1 Biotransference
+1 Black Market Connections
+1 Blightsteel Colossus
+1 Bronze Guardian
+1 Buried Ruin
+1 Cryptothrall
+1 Darksteel Citadel
+1 Darksteel Forge
+1 Darksteel Myr
+1 Digsite Engineer
+1 Dollhouse of Horrors
+1 Efficient Construction
+1 Encroaching Mycosynth
+1 Everflowing Chalice
+1 Faerie Artisans
+1 Fellwar Stone
+1 Goldmire Bridge
+1 Inventors' Fair
+3 Island
+1 Karn, Scion of Urza
+1 Liberator, Urza's Battlethopter
+1 Liquimetal Torque
+1 Lita, Mechanical Engineer
+1 Losheel, Clockwork Scholar
+1 March of Progress
+1 Metalworker
+1 Mirrodin Besieged
+1 Mistvault Bridge
+1 Mox Opal
+1 Myr Battlesphere
+1 Mystic Forge
+1 Nettlecyst
+1 Noxious Gearhulk
+1 Organic Extinction
+1 Ornithopter of Paradise
+1 Orzhov Signet
+1 Padeem, Consul of Innovation
+1 Path of Ancestry
+1 Path to Exile
+2 Plains
+1 Raffine's Tower
+1 Razortide Bridge
+1 Sai, Master Thopterist
+1 Seat of the Synod
+1 Sensei's Divining Top
+1 Sharding Sphinx
+1 Skullclamp
+1 Skycloud Expanse
+1 Solemn Simulacrum
+1 Spire of Industry
+1 Steel Overseer
+2 Swamp
 1 Swiftfoot Boots
-1 Sylvan Library
-1 Sylvan Scrying
-1 Tempt with Discovery
-1 The Great Henge
-1 The One Ring
-1 Three Visits
-1 Titan's Presence
-1 Ugin's Binding
-1 Ugin, the Ineffable
-1 Ugin, the Spirit Dragon
-1 Ulamog's Crusher
-1 Ulamog, the Ceaseless Hunger
-1 Ulamog, the Defiler
-1 Ulamog, the Infinite Gyre
-1 Up the Beanstalk
-1 Void Winnower
-1 Wilderness Reclamation
-1 World Breaker
-1 Zendikar Resurgent
-1 Zhulodok, Void Gorger
+1 Talisman of Dominance
+1 Talisman of Progress
+1 Temple of Deceit
+1 Temple of Enlightenment
+1 Temple of Silence
+1 Tezzeret, Master of the Bridge
+1 Thopter Spy Network
+1 Thran Dynamo
+1 Treasure Vault
+1 Unwinding Clock
+1 Urza's Saga
+1 Urza, Prince of Kroog
+1 Vault of Whispers
+1 Vedalken Humiliator
+1 Wurmcoil Engine

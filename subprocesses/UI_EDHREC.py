@@ -713,9 +713,11 @@ while True:
     if event == 'Analyze':
         # grab all the info from EDHREC
         deck_text = values['-DECK-']
-        new_deck = read_new_deck('resources/new_deck.txt')
         with open('resources/new_deck.txt', 'w') as f:
             f.write(deck_text)
+
+        new_deck = read_new_deck('resources/new_deck.txt')
+        
         subprocess.run(['python', 'subprocesses/extract_commander.py'])
         # get selected theme
         selected_theme = window['-THEME-'].get()

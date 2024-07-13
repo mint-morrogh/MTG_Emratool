@@ -2,18 +2,14 @@ import PySimpleGUI as sg
 import os
 import webbrowser
 import subprocess
+import threading
 
 sg.theme('DarkBlue9')
 
-version = '0.36'
+version = '0.37'
 
-# when you pull up a tool, auto minimize UI_Main and when a tool is closed, bring it back up
 
-# coloring for cards probably needs to happen at the end of the UI_EDHREC and not during read. 
-# takes 2 analyze for it to be correct when fresh opening
-
-# if commander changes when researching EDHREC Fetcher, should clear the theme selection and reload it,
-# also shouldnt have anything selected
+# EDHREC Fetcher theme dropdown needs a clear button to go back to nothing selected
 
 # wheen bloomburrow releases, three tree city definitly is a tribal staple 
 
@@ -39,13 +35,11 @@ version = '0.36'
 
 
 
-
 menu_def = [
     ['File', ['Exit']],
     ['Tools', ['Random Commander', 'Deck Compare', 'EDHREC Fetcher', 'Land Calculator', 'Combo Finder', 'UI Test']],
     ['Help', 'Changelog']
 ]
-
 
 # Main window init and add the menu and tab group
 main_window_layout = [
@@ -60,11 +54,13 @@ main_window_layout = [
 ]
 
 def run_subprocess(command):
+    def monitor_subprocess(proc):
+        proc.wait()
+        main_window.write_event_value('SUBPROCESS_COMPLETE', '')
+
     main_window.minimize()
     process = subprocess.Popen(command, shell=True)
-    process.wait()
-    main_window.normal()
-    main_window.bring_to_front()
+    threading.Thread(target=monitor_subprocess, args=(process,), daemon=True).start()
 
 main_window = sg.Window('Emratool ' + version, main_window_layout, finalize=True)
 
@@ -88,7 +84,9 @@ while True:
         webbrowser.open_new_tab('https://commanderspellbook.com/find-my-combos/')
     elif event == 'Random Commander':
         run_subprocess('python subprocesses/UI_random_commander.py')
-
+    elif event == 'SUBPROCESS_COMPLETE':
+        main_window.normal()
+        main_window.bring_to_front()
 
 # Close the window and exit the program
 main_window.close()
