@@ -1,35 +1,81 @@
+import os
 import json
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 
-# run chrome driver headlessly, and wait time declared
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disable-gpu')
+def get_chrome_driver():
+    """Get a valid ChromeDriver, and handle errors by redownloading if necessary."""
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gpu')
 
-# Use webdriver-manager to handle ChromeDriver
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+    service = None
+    driver = None
 
-# maximum wait time of 10 seconds
-wait = WebDriverWait(driver, 10)
+    # Get the correct path to the ChromeDriver executable
+    try:
+        service_path = ChromeDriverManager().install()
+        chromedriver_path = os.path.join(
+            os.path.dirname(service_path),
+            "chromedriver.exe"  # Ensure this is pointing to the actual executable
+        )
 
-def as_commander():
+        if not os.path.isfile(chromedriver_path):
+            raise FileNotFoundError(f"ChromeDriver executable not found at: {chromedriver_path}")
+
+        service = Service(chromedriver_path)
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        print(f"ChromeDriver successfully started from: {chromedriver_path}")
+
+    except (OSError, WebDriverException, FileNotFoundError) as e:
+        print(f"Error initializing ChromeDriver: {e}")
+        print("Attempting to redownload ChromeDriver...")
+
+        # Sleep for a brief moment before retrying
+        time.sleep(2)
+
+        # Redownload and retry
+        service_path = ChromeDriverManager().install()
+        chromedriver_path = os.path.join(
+            os.path.dirname(service_path),
+            "chromedriver.exe"
+        )
+
+        if not os.path.isfile(chromedriver_path):
+            raise FileNotFoundError(f"ChromeDriver executable not found after redownload at: {chromedriver_path}")
+
+        try:
+            service = Service(chromedriver_path)
+            driver = webdriver.Chrome(service=service, options=chrome_options)
+            print(f"ChromeDriver redownloaded and successfully started from: {chromedriver_path}")
+        except Exception as final_exception:
+            print(f"Failed to start ChromeDriver after redownload: {final_exception}")
+            raise
+
+    return driver
+
+def as_commander(driver):
+    # Create a WebDriverWait instance
+    wait = WebDriverWait(driver, 10)
+    
     # read commander of deck
     with open('resources/EDHScraper/commander_id.json', 'r') as f:
         commander_id = json.load(f)['commander_id']
+    
     # read selected theme from file
     selected_theme = ''
     with open('resources/EDHScraper/selected_theme.json', 'r') as f:
         data = json.load(f)
         if data:
             selected_theme = data.get('selected_theme', '')
+    
     # append selected theme to URL if it's not blank
     url = f'https://edhrec.com/commanders/{commander_id}'
     if selected_theme:
@@ -169,7 +215,7 @@ def as_commander():
     with open('resources/EDHScraper/edhrec_lands.json', 'w') as f:
         json.dump({'lands': text}, f)
 
-# Get themes
+    # Get themes
     try:
         themes_div = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'NavigationPanel_themes__E1O6V')))
         themes = []
@@ -187,7 +233,9 @@ def as_commander():
     # Write the themes to the edhrec_themes.json file
     with open('resources/EDHScraper/edhrec_themes.json', 'w') as f:
         json.dump({'themes': themes}, f)
+
     driver.quit()
 
-
-as_commander()
+# Main execution
+driver = get_chrome_driver()
+as_commander(driver)

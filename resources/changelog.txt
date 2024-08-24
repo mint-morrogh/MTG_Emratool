@@ -1,4 +1,9 @@
 ################## Version 0.37 #################### 
+8/24/24
+**BUG FIXED: EDHREC Fetcher now checks for current chrome driver, and if not current, updates it before fetching
+**BUG FIXED: Random Commander now checks for current chrome driver, and if not current, updates it before fetching. Also checks the correct header for Commander ID after EDHREC update.
+
+################## Version 0.37 #################### 
 7/13/24
 **BUG FIXED: EDHREC Fetcher now properly reads deck and adds green highlighting when switching between decks, instead of having to press Analyze twice
 **BUG FIXED: threading implemented for main_UI, so when subprocesses run, the main window doesn't have trouble restoring if interrupted
