@@ -1,10 +1,5 @@
-Deck: Flash Faeries v1
-
-Commander: 
-1 Alela, Cunning Conqueror
-
-Main: 
 1 Aetherize
+1 Amphibian Downpour
 1 Ancient Tomb
 1 Arcane Signet
 1 Archmage of Echoes
@@ -12,6 +7,7 @@ Main:
 1 Bitterblossom
 1 Black Market Connections
 1 Blightwing Bandit
+1 Brainstorm
 1 Brazen Borrower
 1 Cavern of Souls
 1 Chrome Mox
@@ -21,32 +17,32 @@ Main:
 1 Command Tower
 1 Cyclonic Rift
 1 Darkslick Shores
+1 Deadly Dispute
 1 Demonic Tutor
 1 Dictate of Erebos
 1 Dimir Signet
+1 Dire Undercurrents
 1 Door of Destinies
 1 Drowned Catacomb
 1 Exquisite Blood
 1 Faerie Artisans
 1 Faerie Duelist
 1 Faerie Harbinger
-1 Faerie Invaders
 1 Faerie Mastermind
+1 Faerie Tauntings
 1 Faerie Vandal
 1 Fellwar Stone
 1 Fetid Pools
 1 Field of the Dead
 1 Glen Elendra Archmage
-1 Glen Elendra Liege
+1 Herald's Horn
 1 Imperial Seal
-1 Inspired Sprite
 1 Kindred Discovery
 1 Kindred Dominance
 1 Lightning Greaves
 1 Malleable Impostor
 1 Mana Confluence
 1 Mana Crypt
-1 Midnight Clock
 1 Mistbind Clique
 1 Mithril Coat
 1 Morphic Pool
@@ -66,13 +62,11 @@ Main:
 1 Scion of Oona
 1 Secluded Courtyard
 1 Secluded Glen
-1 Sentinels of Glen Elendra
 1 Shipwreck Marsh
 1 Skullclamp
-4 Snow-Covered Island
-4 Snow-Covered Swamp
+3 Snow-Covered Island
+3 Snow-Covered Swamp
 1 Sol Ring
-1 Spellscorn Coven
 1 Spellstutter Sprite
 1 Stingblade Assassin
 1 Stunt Double
@@ -81,11 +75,11 @@ Main:
 1 Swiftfoot Boots
 1 Tainted Isle
 1 Takenuma, Abandoned Mire
-1 Talion, the Kindly Lord
 1 Talisman of Dominance
 1 Tegwyll, Duke of Splendor
-1 The Meathook Massacre
 1 The One Ring
+1 Three Tree City
+1 Titan of Littjara
 1 Underground River
 1 Underground Sea
 1 Urza's Saga
@@ -93,13 +87,9 @@ Main:
 1 Vanquisher's Banner
 1 Vendilion Clique
 1 War Room
+1 Waterlogged Teachings
 1 Watery Grave
+1 Wavebreak Hippocamp
 1 Whip of Erebos
 1 Whispersilk Cloak
 1 Wydwen, the Biting Gale
-
-Sideboard: 
-1 As Foretold
-1 Blackblade Reforged
-1 Reflections of Littjara
-1 Toxic Deluge
