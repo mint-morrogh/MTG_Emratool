@@ -108,14 +108,28 @@ def update_collection(file_path, csv_path, collected_type):
             # Now remove the old version of the Paper deck
             new_collection = [card for card in new_collection if not (card['Deck'] == deck_name and card['Collected'] == collected_status)]
             process_deck(deck_name, commander, card_count, existing_collection, new_collection, unassigned_cards, collected_status)
+
+    # Combine duplicate unassigned cards
+    combined_unassigned = defaultdict(int)
+    for card in new_collection:
+        if card['Collected'] == 'Unassigned':
+            combined_unassigned[card['Card Name']] += int(card['Quantity'])
+
+    # Remove duplicates and replace with combined entries
+    new_collection = [
+        card for card in new_collection 
+        if card['Collected'] != 'Unassigned'
+    ]
+    for card_name, quantity in combined_unassigned.items():
+        process_card(card_name, quantity, 'Unassigned', '', '', existing_collection, new_collection, unassigned_cards)
     
-    update_collected_quantities(new_collection + unassigned_cards)
+    update_collected_quantities(new_collection)
     
     with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Collected', 'Deck', 'Commander', 'Card Name', 'Card Type', 'Subtype', 'Mana Cost', 'CMC', 'Colors', 'Oracle Text', 'Power', 'Toughness', 'Rarity', 'Set Name', 'Set Code', 'Collector Number', 'Artist', 'Quantity', 'Collected Quantity']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(new_collection + unassigned_cards)
+        writer.writerows(new_collection)
     print(f"Updated CSV: {csv_path}") 
 
     with open(file_path, 'w', encoding='utf-8') as file:
