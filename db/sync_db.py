@@ -28,6 +28,8 @@ def parse_type_line(type_line):
 def update_collection(file_path, csv_path, collected_type):
     if collected_type == 'Forge':
         collected_status = 'Forge - Ready For Order'
+    elif collected_type == 'Unassigned':
+        collected_status = 'Unassigned'
     else:
         collected_status = 'Paper - Owned Card'
     
@@ -46,124 +48,142 @@ def update_collection(file_path, csv_path, collected_type):
 
     deck_name = None
     commander = None
-    main_cards = []
-    new_collection = []
-
-    for line in lines:
-        line = line.strip()
-        
-        if line.startswith("Deck:"):
-            if deck_name:
-                process_deck(deck_name, commander, main_cards, existing_collection, new_collection, collected_status)
-            deck_name = line.split(":")[1].strip()
-            main_cards = []
-            # Remove all cards from the deck in Forge if converting to Paper
-            if collected_status.startswith('Paper'):
-                existing_collection = [card for card in existing_collection if not (card['Deck'] == deck_name and card['Collected'].startswith('Forge'))]
-            print(f"Processing deck: {deck_name}") 
-        
-        elif line.startswith("Commander:"):
-            if "1 " in line:
-                commander = line.split("1 ", 1)[1].strip()
-            else:
-                commander = line.split(":")[1].strip()
-            print(f"Commander: {commander}") 
-        
-        elif line.startswith("Main:"):
-            continue
-        
-        elif line.startswith("Sideboard:"):
-            continue  
-        
-        elif line:
-            if line[0].isdigit():
-                quantity, card_name = line.split(" ", 1)
-                quantity = int(quantity)
-            else:
-                quantity = 1
-                card_name = line.strip()
+    card_count = defaultdict(int)  # To track quantity of each card
+    new_collection = existing_collection[:]  # Start with existing collection
+    unassigned_cards = []
+    
+    if collected_type == 'Unassigned':
+        for line in lines:
+            card_name = line.strip()
+            if card_name:
+                card_count[card_name] += 1
+        # Process unassigned cards directly
+        for card_name, quantity in card_count.items():
+            process_card(card_name, quantity, 'Unassigned', '', '', existing_collection, new_collection, unassigned_cards)
+    else:
+        for line in lines:
+            line = line.strip()
             
-            main_cards.append((card_name, quantity))
-            print(f"Added card: {card_name} x{quantity}") 
+            if line.startswith("Deck:"):
+                if deck_name:
+                    # Remove the old version of the deck from new_collection before processing the new one
+                    new_collection = [card for card in new_collection if not (card['Deck'] == deck_name and card['Collected'] == collected_status)]
+                    process_deck(deck_name, commander, card_count, existing_collection, new_collection, unassigned_cards, collected_status)
+                deck_name = line.split(":")[1].strip()
+                card_count = defaultdict(int)
+                print(f"Processing deck: {deck_name}") 
+        
+            elif line.startswith("Commander:"):
+                commander = line.split("1 ", 1)[1].strip() if "1 " in line else line.split(":")[1].strip()
+                print(f"Commander: {commander}") 
+            
+            elif line.startswith("Main:"):
+                continue
+            
+            elif line.startswith("Sideboard:"):
+                continue  # Skip sideboard cards
+            
+            elif line:
+                quantity, card_name = (int(line.split(" ", 1)[0]), line.split(" ", 1)[1]) if line[0].isdigit() else (1, line.strip())
+                card_count[card_name] += quantity
+                print(f"Added card: {card_name} x{quantity}") 
     
-    if deck_name:
-        process_deck(deck_name, commander, main_cards, existing_collection, new_collection, collected_status)
-    
-    # Check for sold Paper cards
-    collected_totals = defaultdict(int)
-    for card in new_collection:
-        if card['Collected'].startswith('Paper'):
-            collected_totals[card['Card Name']] += int(card['Quantity'])
-    
-    for card in new_collection:
-        if card['Card Name'] in collected_totals and card['Collected'].startswith('Paper'):
-            card['Collected Quantity'] = collected_totals[card['Card Name']]
-    
-    new_collection.extend(existing_collection)  # Add remaining cards
+        if deck_name:
+            # If uploading a Forge deck, check if there's an existing Paper deck with the same name
+            if collected_type == 'Forge':
+                paper_deck_cards = {
+                    card['Card Name']: int(card['Quantity'])
+                    for card in new_collection
+                    if card['Deck'] == deck_name and card['Collected'] == 'Paper - Owned Card'
+                }
+                # Only add new cards that are not already in the paper deck
+                card_count = {
+                    card_name: quantity
+                    for card_name, quantity in card_count.items()
+                    if card_name not in paper_deck_cards or quantity > paper_deck_cards[card_name]
+                }
 
+            # Remove any existing Forge deck with the same name before adding the new Forge deck
+            new_collection = [card for card in new_collection if not (card['Deck'] == deck_name and card['Collected'] == 'Forge - Ready For Order')]
+            # Now remove the old version of the Paper deck
+            new_collection = [card for card in new_collection if not (card['Deck'] == deck_name and card['Collected'] == collected_status)]
+            process_deck(deck_name, commander, card_count, existing_collection, new_collection, unassigned_cards, collected_status)
+    
+    update_collected_quantities(new_collection + unassigned_cards)
+    
     with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Collected', 'Deck', 'Commander', 'Card Name', 'Card Type', 'Subtype', 'Mana Cost', 'CMC', 'Colors', 'Oracle Text', 'Power', 'Toughness', 'Rarity', 'Set Name', 'Set Code', 'Collector Number', 'Artist', 'Quantity', 'Collected Quantity']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
-        for card in new_collection:
-            card['Quantity'] = str(card['Quantity'])
-            card['Collected Quantity'] = str(card['Collected Quantity'])
-            writer.writerow(card)
+        writer.writerows(new_collection + unassigned_cards)
     print(f"Updated CSV: {csv_path}") 
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write("")
     print(f"Cleared contents of {file_path}")
 
-def process_deck(deck_name, commander, main_cards, existing_collection, new_collection, collected_status):
-    removed_cards = {card['Card Name'] for card in existing_collection if card['Deck'] == deck_name and card['Collected'] == collected_status}
+def process_card(card_name, quantity, collected_status, deck_name, commander, existing_collection, new_collection, unassigned_cards):
+    card_info = fetch_card_info(card_name)
+    if card_info:
+        card_type, subtype = parse_type_line(card_info['type_line'])
+        existing_card = next((card for card in new_collection if card['Card Name'] == card_name and card['Collected'] == collected_status and card['Deck'] == deck_name), None)
+        if existing_card:
+            existing_card['Quantity'] += quantity
+        else:
+            new_entry = {
+                'Collected': collected_status,
+                'Deck': deck_name if collected_status != 'Unassigned' else '',
+                'Commander': commander if collected_status != 'Unassigned' else '',
+                'Card Name': card_info['name'],
+                'Card Type': card_type,
+                'Subtype': subtype,
+                'Mana Cost': card_info.get('mana_cost', ''),
+                'CMC': card_info.get('cmc', ''),
+                'Colors': ', '.join(card_info.get('colors', [])),
+                'Oracle Text': card_info.get('oracle_text', ''),
+                'Power': card_info.get('power', ''),
+                'Toughness': card_info.get('toughness', ''),
+                'Rarity': card_info.get('rarity', ''),
+                'Set Name': card_info.get('set_name', ''),
+                'Set Code': card_info.get('set', ''),
+                'Collector Number': card_info.get('collector_number', ''),
+                'Artist': card_info.get('artist', ''),
+                'Quantity': quantity,
+                'Collected Quantity': 0
+            }
+            new_collection.append(new_entry)
+        print(f"Processed card: {card_name} x{quantity} for {collected_status if collected_status != 'Unassigned' else 'Unassigned'}")
+
+def process_deck(deck_name, commander, card_count, existing_collection, new_collection, unassigned_cards, collected_status):
+    current_deck_cards = {card['Card Name']: card for card in existing_collection if card['Deck'] == deck_name and card['Collected'] == collected_status}
+
+    for card_name, quantity in card_count.items():
+        process_card(card_name, quantity, collected_status, deck_name, commander, existing_collection, new_collection, unassigned_cards)
     
-    for card_name, quantity in main_cards:
-        card_info = fetch_card_info(card_name)
-        if card_info:
-            card_type, subtype = parse_type_line(card_info['type_line'])
-            for card in existing_collection:
-                if card['Card Name'] == card_name and card['Deck'] == deck_name:
-                    if card['Collected'].startswith('Forge') and collected_status.startswith('Paper'):
-                        card['Collected'] = collected_status
-                        card['Quantity'] = int(card['Quantity']) + quantity
-                        if card_name in removed_cards:
-                            removed_cards.remove(card_name)
-                        new_collection.append(card)
-                        break
-                    elif card['Collected'].startswith('Paper'):
-                        card['Quantity'] = int(card['Quantity']) + quantity
-                        if card_name in removed_cards:
-                            removed_cards.remove(card_name)
-                        new_collection.append(card)
-                        break
-            else:
-                new_entry = {
-                    'Collected': collected_status,
-                    'Deck': deck_name,
-                    'Commander': commander,
-                    'Card Name': card_info['name'],
-                    'Card Type': card_type,
-                    'Subtype': subtype,
-                    'Mana Cost': card_info.get('mana_cost', ''),
-                    'CMC': card_info.get('cmc', ''),
-                    'Colors': ', '.join(card_info.get('colors', [])),
-                    'Oracle Text': card_info.get('oracle_text', ''),
-                    'Power': card_info.get('power', ''),
-                    'Toughness': card_info.get('toughness', ''),
-                    'Rarity': card_info.get('rarity', ''),
-                    'Set Name': card_info.get('set_name', ''),
-                    'Set Code': card_info.get('set', ''),
-                    'Collector Number': card_info.get('collector_number', ''),
-                    'Artist': card_info.get('artist', ''),
-                    'Quantity': quantity,
-                    'Collected Quantity': 0 
-                }
-                new_collection.append(new_entry)
-                if card_name in removed_cards:
-                    removed_cards.remove(card_name)
-            print(f"Processed card: {card_name} x{quantity} for {deck_name}") 
+    # For Forge decks, simply remove the old version without unassigning cards
+    if collected_status.startswith('Forge'):
+        return
+
+    for card in current_deck_cards.values():
+        if card['Card Name'] not in card_count:
+            card['Collected'] = 'Unassigned'
+            card['Deck'] = ''
+            unassigned_cards.append(card)
+            print(f"Unassigned card: {card['Card Name']}")
+
+def update_collected_quantities(collection):
+    """Update the 'Collected Quantity' for each card based on the total across all 'Paper' decks and unassigned cards."""
+    collected_totals = defaultdict(int)
+
+    for card in collection:
+        if card['Collected'] == 'Paper - Owned Card' or card['Collected'] == 'Unassigned':
+            collected_totals[card['Card Name']] += int(card['Quantity'])
+
+    for card in collection:
+        if card['Card Name'] in collected_totals and (card['Collected'] == 'Paper - Owned Card' or card['Collected'] == 'Unassigned'):
+            card['Collected Quantity'] = collected_totals[card['Card Name']]
 
 if __name__ == "__main__":
     update_collection('forge_list.txt', 'mtg_collection.csv', 'Forge')
     update_collection('paper_list.txt', 'mtg_collection.csv', 'Paper')
+    update_collection('unassigned_list.txt', 'mtg_collection.csv', 'Unassigned')
