@@ -1,36 +1,89 @@
-1 Snow-covered Island
-1 Snow-covered Swamp
-1 Urza's Saga
 1 Command Tower
 1 Talon Gates of Madara
-1 Path of Ancestry
+1 Urza's Saga
+1 Gaea's Cradle
 1 Mana Confluence
+1 Path of Ancestry
 1 City of Brass
-1 Mystic Sanctuary
-1 Soporific Springs
-1 Horizon of Progress
+1 The World Tree
+1 Reflecting Pool
+1 Cascading Cataracts
+1 Spire of IndustryPlanar Nexus
+1 Exotic Orchard
 1 Field of the Dead
-1 Strip Mine
-1 Ancient Tomb
-1 War Room
-1 Nykthos, Shrine to Nyx
-1 Demolition Field
+1 Horizon of Progress
+1 Tundra
 1 Underground Sea
+1 Badlands
+1 Taiga
+1 Savannah
+1 Scrubland
+1 Volcanic Island
+1 Bayou
+1 Plateau
+1 Tropical Island
+1 Flooded Strand
 1 Polluted Delta
+1 Bloodstained Mire
+1 Wooded Foothills
+1 Windswept Heath
+1 Marsh Flats
+1 Scalding Tarn
+1 Verdant Catacombs
+1 Arid Mesa
+1 Misty Rainforest
+1 Sacred Foundry
 1 Watery Grave
+1 Blood Crypt
+1 Temple Garden
+1 Breeding Pool
+1 Hallowed Fountain
+1 Stomping Ground
+1 Godless Shrine
+1 Steam Vents
+1 Overgrown Tomb
+1 Deserted Beach
 1 Shipwreck Marsh
+1 Haunted Ridge
+1 Rockfall Vale
+1 Overgrown Farmland
+1 Shattered Sanctum
+1 Stormcarved Coast
+1 Deathcap Glade
+1 Sundown Pass
+1 Dreamroot Cascade
+1 Sea of Clouds
 1 Morphic Pool
+1 Luxury Suite
+1 Spire Garden
+1 Bountiful Promenade
+1 Vault of Champions
+1 Training Center
+1 Undergrowth Stadium
+1 Spectator Seating
+1 Rejuvenating Springs
+1 Glacial Fortress
 1 Drowned Catacomb
-1 Underground River
-1 Sunken Hollow
-1 Sunken Ruins
+1 Dragonskull Summit
+1 Rootbound Crag
+1 Sunpetal Grove
+1 Isolated Chapel
+1 Sulfur Falls
+1 Woodland Cemetery
+1 Clifftop Retreat
+1 Hinterland Harbor
+1 Irrigated Farmland
 1 Fetid Pools
-1 Otawara, Soaring City
-1 Takenuma, Abandoned Mire
-1 Tainted Isle
-1 Temple of Deceit
-1 Clearwater Pathway
-1 Hidden Cataract
-1 Hidden Necropolis
-1 Hall of Storm Giants
-1 Hive of the Eye Tyrant
+1 Canyon Slough
+1 Sheltered Thicket
+1 Scattered Groves
+1 Glacial Floodplain
+1 Ice Tunnel
+1 Sulfurous Mire
+1 Highland Forest
+1 Arctic Treeline
+1 Snowfield Sinkhole
+1 Volatile Fjord
+1 Woodland Chasm
+1 Alpine Meadow
+1 Rimewood Falls

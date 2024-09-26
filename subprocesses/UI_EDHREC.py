@@ -738,7 +738,7 @@ while True:
             line = lines[i]
             if 'of' in line and 'decks' in line:
                 # get the card name from the previous line
-                card_name = lines[i-1].strip()
+                card_name = lines[i-4].strip()
                 high_synergy_cards.append(card_name)
 
         # update the high_synergy_cards_output element
@@ -754,7 +754,7 @@ while True:
         lines = new_cards_data.split('\n')
         for i in range(1, len(lines)):
             line = lines[i]
-            if 'of' in line and 'decks' in line:
+            if 'NEW' in line:
                 # get the card name from the previous line
                 card_name = lines[i-1].strip()
                 new_cards.append(card_name)

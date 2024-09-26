@@ -89,7 +89,7 @@ def as_commander(driver):
             (By.ID, 'highsynergycards')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for highsynergycards element.")
         text = ""
     with open('resources/EDHScraper/edhrec_highsynergy.json', 'w') as f:
         json.dump({'highsynergy': text}, f)
@@ -100,7 +100,7 @@ def as_commander(driver):
             (By.ID, 'newcards')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for new cards element.")
         text = ""
     with open('resources/EDHScraper/edhrec_newcards.json', 'w') as f:
         json.dump({'newcards': text}, f)
@@ -111,7 +111,7 @@ def as_commander(driver):
             (By.ID, 'topcards')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for top cards element.")
         text = ""
     with open('resources/EDHScraper/edhrec_topcards.json', 'w') as f:
         json.dump({'topcards': text}, f)
@@ -122,7 +122,7 @@ def as_commander(driver):
             (By.ID, 'creatures')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for creatures element.")
         text = ""
     with open('resources/EDHScraper/edhrec_creatures.json', 'w') as f:
         json.dump({'creatures': text}, f)
@@ -133,7 +133,7 @@ def as_commander(driver):
             (By.ID, 'instants')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for instants element.")
         text = ""
     with open('resources/EDHScraper/edhrec_instants.json', 'w') as f:
         json.dump({'instants': text}, f)
@@ -144,7 +144,7 @@ def as_commander(driver):
             (By.ID, 'sorceries')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for sorceries element.")
         text = ""
     with open('resources/EDHScraper/edhrec_sorceries.json', 'w') as f:
         json.dump({'sorceries': text}, f)
@@ -155,7 +155,7 @@ def as_commander(driver):
             (By.ID, 'utilityartifacts')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for utility artifacts element.")
         text = ""
     with open('resources/EDHScraper/edhrec_utilityartifacts.json', 'w') as f:
         json.dump({'utilityartifacts': text}, f)
@@ -166,7 +166,7 @@ def as_commander(driver):
             (By.ID, 'planeswalkers')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for planeswalkers element.")
         text = ""
     with open('resources/EDHScraper/edhrec_planeswalkers.json', 'w') as f:
         json.dump({'planeswalkers': text}, f)
@@ -177,7 +177,7 @@ def as_commander(driver):
             (By.ID, 'enchantments')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for enchantments element.")
         text = ""
     with open('resources/EDHScraper/edhrec_enchantments.json', 'w') as f:
         json.dump({'enchantments': text}, f)
@@ -188,7 +188,7 @@ def as_commander(driver):
             (By.ID, 'manaartifacts')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for mana artifacts element.")
         text = ""
     with open('resources/EDHScraper/edhrec_manaartifacts.json', 'w') as f:
         json.dump({'manaartifacts': text}, f)
@@ -199,7 +199,7 @@ def as_commander(driver):
             (By.ID, 'utilitylands')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for utility lands element.")
         text = ""
     with open('resources/EDHScraper/edhrec_utilitylands.json', 'w') as f:
         json.dump({'utilitylands': text}, f)
@@ -210,7 +210,7 @@ def as_commander(driver):
             (By.ID, 'lands')))
         text = high_synergy_cards.text
     except TimeoutException:
-        print("Timed out waiting for element.")
+        print("Timed out waiting for lands element.")
         text = ""
     with open('resources/EDHScraper/edhrec_lands.json', 'w') as f:
         json.dump({'lands': text}, f)
