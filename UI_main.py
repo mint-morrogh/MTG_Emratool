@@ -6,7 +6,7 @@ import threading
 
 sg.theme('DarkBlue9')
 
-version = '0.37'
+version = '0.39'
 
 
 # EDHREC Fetcher theme dropdown needs a clear button to go back to nothing selected
